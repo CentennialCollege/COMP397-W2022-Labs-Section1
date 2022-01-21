@@ -1511,6 +1511,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6221883241460906521, guid: ff052642202bd8a43a3dfab5adf39853,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671510151939457599, guid: ff052642202bd8a43a3dfab5adf39853,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 119
+      objectReference: {fileID: 0}
     - target: {fileID: 7126523407235162755, guid: ff052642202bd8a43a3dfab5adf39853,
         type: 3}
       propertyPath: m_RootOrder
@@ -1524,7 +1534,7 @@ PrefabInstance:
     - target: {fileID: 7126523407235162755, guid: ff052642202bd8a43a3dfab5adf39853,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.948
+      value: 1.048
       objectReference: {fileID: 0}
     - target: {fileID: 7126523407235162755, guid: ff052642202bd8a43a3dfab5adf39853,
         type: 3}
@@ -1573,3 +1583,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff052642202bd8a43a3dfab5adf39853, type: 3}
+--- !u!1 &6671510152323706701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7931605243347953095, guid: ff052642202bd8a43a3dfab5adf39853,
+    type: 3}
+  m_PrefabInstance: {fileID: 6671510152323706700}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6671510152323706702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6221883241460906521, guid: ff052642202bd8a43a3dfab5adf39853,
+    type: 3}
+  m_PrefabInstance: {fileID: 6671510152323706700}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6671510152323706703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6671510152323706701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ffebb1d1d9e4284d92c0fe6d96af4de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 10
+  gravity: -30
+  jumpHeight: 3
+  groundCheck: {fileID: 6671510152323706702}
+  groundRadius: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  isGrounded: 0
