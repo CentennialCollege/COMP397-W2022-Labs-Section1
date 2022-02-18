@@ -19,5 +19,10 @@ public class HealthBarController : MonoBehaviour
         {
             TakeDamage(10);
         }
+
+        if (other.gameObject.CompareTag("Hazard"))
+        {
+            TakeDamage(5);
+        }
     }
 }
