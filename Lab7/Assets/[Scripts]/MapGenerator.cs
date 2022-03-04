@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
 {
+    // Public Properties exposed in the inspector
     [Header("Tile Resources")] 
     public List<GameObject> tilePrefabs;
     public GameObject startTile;
@@ -19,16 +20,41 @@ public class MapGenerator : MonoBehaviour
     [Header("Generated Tiles")] 
     public List<GameObject> tiles;
 
+    // Private properties
+    private int startWidth;
+    private int startDepth;
+
     // Start is called before the first frame update
     void Start()
     {
+        startWidth = width;
+        startDepth = depth;
         BuildMap();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (width != startWidth || depth != startDepth)
+        {
+            ResetMap();
+            BuildMap();
+        }
+    }
+
+    public void ResetMap()
+    {
+        startWidth = width;
+        startDepth = depth;
+        var size = tiles.Count;
+
+        // destroy every tile
+        for (int i = 0; i < size; i++)
+        {
+            Destroy(tiles[i]);
+        }
+
+        tiles.Clear(); // remove all the tile references
     }
 
     public void BuildMap()
