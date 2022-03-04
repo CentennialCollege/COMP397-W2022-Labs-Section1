@@ -11,10 +11,10 @@ public class MapGenerator : MonoBehaviour
     public GameObject goalTile;
 
     [Header("Map Properties")] 
-    [Range(2, 30)]
-    public int width = 2;
-    [Range(2, 30)]
-    public int depth = 2;
+    [Range(3, 30)]
+    public int width = 3;
+    [Range(3, 30)]
+    public int depth = 3;
     public Transform tileParent;
 
     [Header("Generated Tiles")] 
@@ -62,18 +62,32 @@ public class MapGenerator : MonoBehaviour
         // place the start tile
         tiles.Add(Instantiate(startTile, Vector3.zero, Quaternion.identity, tileParent));
 
+        // place the goal in a random location
+        var randomGoalRow = Random.Range(2, depth);
+        var randomGoalCol = Random.Range(2, width);
+
         // generate random tiles by width x depth
         for (int row = 0; row < depth; row++)
         {
             for (int col = 0; col < width; col++)
             {
+                // Skip the Start Tile
                 if (row == 0 && col == 0) { continue; }
 
-                var randomTilePrefabIndex = Random.Range(0, 4);
-                var randomTileRotation = Quaternion.Euler(0.0f, Random.Range(0, 4) * 90.0f, 0.0f);
                 var randomTilePosition = new Vector3(col * 20.0f, 0.0f, row * 20.0f);
-                var randomTile = Instantiate(tilePrefabs[randomTilePrefabIndex], randomTilePosition, randomTileRotation, tileParent);
-                tiles.Add(randomTile);
+
+                if (row == randomGoalRow && col == randomGoalCol)
+                {
+                    // place the goal tile
+                    tiles.Add(Instantiate(goalTile, randomTilePosition, Quaternion.identity, tileParent));
+                }
+                else
+                {
+                    var randomTilePrefabIndex = Random.Range(0, 4);
+                    var randomTileRotation = Quaternion.Euler(0.0f, Random.Range(0, 4) * 90.0f, 0.0f);
+                    var randomTile = Instantiate(tilePrefabs[randomTilePrefabIndex], randomTilePosition, randomTileRotation, tileParent);
+                    tiles.Add(randomTile);
+                }
             }
         }
     }
