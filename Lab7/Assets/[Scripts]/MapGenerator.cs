@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
@@ -30,6 +31,7 @@ public class MapGenerator : MonoBehaviour
         startWidth = width;
         startDepth = depth;
         BuildMap();
+        Invoke(nameof(BakeNavMeshes), 0.2f);
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class MapGenerator : MonoBehaviour
         {
             ResetMap();
             BuildMap();
+            Invoke(nameof(BakeNavMeshes), 0.2f);
         }
     }
 
@@ -89,6 +92,14 @@ public class MapGenerator : MonoBehaviour
                     tiles.Add(randomTile);
                 }
             }
+        }
+    }
+
+    public void BakeNavMeshes()
+    {
+        foreach (var tile in tiles)
+        {
+            tile.GetComponent<NavMeshSurface>().BuildNavMesh();
         }
     }
 }

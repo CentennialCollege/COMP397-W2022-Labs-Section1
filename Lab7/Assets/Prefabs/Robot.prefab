@@ -175,10 +175,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931910233595226091}
     m_Modifications:
+    - target: {fileID: 3660421200824768908, guid: e26ab1e2d848966438f70384ebfc8b33,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660421200824768908, guid: e26ab1e2d848966438f70384ebfc8b33,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.008
+      objectReference: {fileID: 0}
     - target: {fileID: 6145756333376109904, guid: e26ab1e2d848966438f70384ebfc8b33,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145756333376109904, guid: e26ab1e2d848966438f70384ebfc8b33,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145756333376109904, guid: e26ab1e2d848966438f70384ebfc8b33,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6145756333376109904, guid: e26ab1e2d848966438f70384ebfc8b33,
         type: 3}
@@ -272,17 +292,4 @@ CapsuleCollider:
   m_Radius: 0.01993587
   m_Height: 0.038115263
   m_Direction: 2
-  m_Center: {x: 0.0006967227, y: 0.0065656286, z: 0.0077503845}
---- !u!114 &682852501824602232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5352262762172890443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 585a717faef71d040ba157ad212db2e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controls: {fileID: 0}
+  m_Center: {x: 0, y: 0, z: 0.008}
