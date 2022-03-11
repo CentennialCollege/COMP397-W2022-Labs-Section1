@@ -18,6 +18,11 @@ public class PlayerBehaviour : MonoBehaviour
     public LayerMask groundMask;
     public bool isGrounded;
 
+    [Header("OnScreen Controls")]
+    public GameObject onScreenControls;
+    public GameObject miniMap;
+    public Joystick leftJoystick;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +39,8 @@ public class PlayerBehaviour : MonoBehaviour
             velocity.y = -2.0f;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = Input.GetAxis("Horizontal") + leftJoystick.Horizontal;
+        float z = Input.GetAxis("Vertical") + leftJoystick.Vertical;
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * maxSpeed * Time.deltaTime);
@@ -56,6 +61,19 @@ public class PlayerBehaviour : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
     }
 
+    public void OnJumpButton_Pressed()
+    {
+        if (isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
+        }
+    }
+
+    public void OnMapButton_Pressed()
+    {
+        // Toggles MiniMap visibility
+        miniMap.SetActive(!miniMap.activeInHierarchy);
+    }
  
 
 }
