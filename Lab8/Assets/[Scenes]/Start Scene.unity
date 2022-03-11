@@ -321,8 +321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -77}
-  m_SizeDelta: {x: 203.3011, y: 45.0672}
+  m_AnchoredPosition: {x: 0, y: -302.72455}
+  m_SizeDelta: {x: 715.6549, y: 153.1185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1339589958
 MonoBehaviour:
@@ -453,10 +453,10 @@ RectTransform:
   m_Father: {fileID: 1983675368}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000014305115, y: 0}
-  m_SizeDelta: {x: 445.4951, y: 904.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.010009766, y: 0.0026855469}
+  m_SizeDelta: {x: -0.0198, y: 0.0048828}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512973314
 MonoBehaviour:
@@ -615,8 +615,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 229}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.000015258789, y: 260.58792}
+  m_SizeDelta: {x: 1034.7358, y: 172.5659}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768495480
 MonoBehaviour:
@@ -665,12 +665,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.9
+  m_fontSize: 154.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 200
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -744,6 +744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dea6a680d887f46afe9e5d391578bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  healthBarValueLabel: {fileID: 0}
 --- !u!4 &1788674780
 Transform:
   m_ObjectHideFlags: 0
@@ -844,12 +846,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.3
+  m_fontSize: 100
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 20
-  m_fontSizeMax: 60
+  m_fontSizeMax: 100
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -942,12 +944,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 3040, y: 1440}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
