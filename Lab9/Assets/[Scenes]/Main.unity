@@ -1715,6 +1715,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e84a398760bbd8478aeb61840cdae0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 329862364}
+  playerCameraTransform: {fileID: 1338196803}
+--- !u!4 &1338196803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5981911874007757291, guid: 58740a7229e6bf44082d31a683562105,
+    type: 3}
+  m_PrefabInstance: {fileID: 157524787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1432700622
 GameObject:
   m_ObjectHideFlags: 0
