@@ -2,18 +2,12 @@
     "m_SelectedDeviceId": "emulator-5554",
     "m_SelectedPackage": {
         "deviceId": "emulator-5554",
-        "name": "ca.centennialcollege.comp397.lab9",
-        "processId": 4239,
+        "name": "ca.centennialcollege.comp397.lab10",
+        "processId": 2790,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.ldmnq.launcher3",
-            "processId": 1919,
-            "exited": true
-        },
         {
             "deviceId": "emulator-5554",
             "name": "ca.centennialcollege.comp397.lab8",
@@ -30,18 +24,24 @@
             "deviceId": "emulator-5554",
             "name": "com.ldmnq.launcher3",
             "processId": 1779,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "emulator-5554",
             "name": "ca.centennialcollege.comp397.lab9",
             "processId": 3946,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "emulator-5554",
             "name": "ca.centennialcollege.comp397.lab9",
             "processId": 4239,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.centennialcollege.comp397.lab10",
+            "processId": 2790,
             "exited": false
         }
     ],
