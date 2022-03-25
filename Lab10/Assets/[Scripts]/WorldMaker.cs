@@ -6,6 +6,7 @@ public class WorldMaker : MonoBehaviour
 {
     [Header("Player Properties")]
     public GameObject playerPrefab;
+    public Transform spawnPoint;
 
     [Header("World Properties")]
     [Range(8, 64)]
@@ -62,6 +63,7 @@ public class WorldMaker : MonoBehaviour
         Initialize();
         Reset();
         Regenerate();
+        PositionPlayer();
     }
 
     private void Initialize()
@@ -107,5 +109,15 @@ public class WorldMaker : MonoBehaviour
             Destroy(tile);
         }
         grid.Clear();
+    }
+
+    private void PositionPlayer()
+    {
+        var newPosition = new Vector3(width * 0.5f, height + 10.0f, depth * 0.5f);
+        spawnPoint.position = newPosition;
+
+        playerPrefab.GetComponent<CharacterController>().enabled = false;
+        playerPrefab.transform.position = newPosition;
+        playerPrefab.GetComponent<CharacterController>().enabled = true;
     }
 }
