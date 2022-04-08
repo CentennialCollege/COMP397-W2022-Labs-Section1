@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 77
+  controlID: 48
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 27
+  controlID: 21
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -306,7 +306,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 1261
-    height: 440
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -395,22 +395,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/[Scripts]
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/[Scripts]
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\tsili\OneDrive\Desktop\Centennial\COMP397\Section-1\Lab12
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1a660000
-    m_LastClickedID: 26138
-    m_ExpandedIDs: 00000000e865000000ca9a3b
+    m_SelectedIDs: 0c660000
+    m_LastClickedID: 26124
+    m_ExpandedIDs: 00000000e665000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -438,7 +438,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8650000
+    m_ExpandedIDs: 00000000e6650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -469,15 +469,15 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000be5b0000ac8500004683000000000000465c0000485f00009c600000005e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: NetworkCameraController
-      m_OriginalName: NetworkCameraController
+      m_Name: GunCameraController
+      m_OriginalName: GunCameraController
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 26184
+      m_UserData: 29352
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 19
+    y: 73
     width: 1261
     height: 926
   m_ViewDataDictionary: {fileID: 0}
@@ -720,9 +720,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.1587782, y: -14.029795, z: 18.428364}
+    m_Target: {x: -21.641876, y: -13.125581, z: -7.977506}
     speed: 2
-    m_Value: {x: -3.1587782, y: -14.029795, z: 18.428364}
+    m_Value: {x: -21.641876, y: -13.125581, z: -7.977506}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -769,9 +769,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.30919316, y: -0.04564711, z: 0.014858498, w: 0.94981176}
+    m_Target: {x: 0.15267414, y: -0.79981774, z: 0.22887555, w: 0.5335261}
     speed: 2
-    m_Value: {x: 0.30918586, y: -0.045646034, z: 0.014858147, w: 0.94978935}
+    m_Value: {x: 0.15267017, y: -0.79979694, z: 0.2288696, w: 0.53351223}
   m_Size:
     m_Target: 15.747982
     speed: 2
@@ -834,7 +834,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 36d9ffff78d9ffff02daffffc4daffff06dbffff10ddffff16e0ffff58e0ffff5ae2fffffeeaffff58ebffff62edffff26fbffff
+      m_ExpandedIDs: 9a9cffffdc9cffffe89effff68aaffffaaaaffffb6acffffa0bbffffb4bbffff38beffff7abeffff86c0ffff4ac6ffff8cc6ffff96c8ffffeaf3ffffecf5ffff00f6ffffecf6ffff2ef7ffff38f9ffff26fbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -47,7 +47,7 @@ public class NetworkPlayerBehaviour : NetworkBehaviour
         }
     }
 
-    private void LateUpate()
+    private void LateUpdate()
     {
         if (IsLocalPlayer)
         {
