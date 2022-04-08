@@ -37,7 +37,7 @@ public class NetworkPlayerBehaviour : NetworkBehaviour
     {
         if (!IsLocalPlayer)
         {
-            GetComponentInChildren<CameraController>().enabled = false;
+            GetComponentInChildren<NetworkCameraController>().enabled = false;
             GetComponentInChildren<Camera>().enabled = false;
         }
 
@@ -45,6 +45,20 @@ public class NetworkPlayerBehaviour : NetworkBehaviour
         {
             RandomSpawnPosition();
         }
+    }
+
+    private void LateUpate()
+    {
+        if (IsLocalPlayer)
+        {
+            UpdateRotationServerRpc(transform.eulerAngles.y);
+        }
+    }
+
+    [ServerRpc]
+    void UpdateRotationServerRpc(float newRotationY)
+    {
+        transform.rotation = Quaternion.Euler(0.0f, newRotationY, 0.0f);
     }
 
     // Update is called once per frame
@@ -61,13 +75,20 @@ public class NetworkPlayerBehaviour : NetworkBehaviour
             // client update
             ClientUpdate();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public void RandomSpawnPosition()
     {
+        GetComponent<CharacterController>().enabled = false;
         var x = Random.Range(-3.0f, 3.0f);
         var z = Random.Range(-3.0f, 3.0f);
         transform.position = new Vector3(x, 1.0f, z);
+        GetComponent<CharacterController>().enabled = true;
     }
 
     public Color SetRandomMaterialColour()

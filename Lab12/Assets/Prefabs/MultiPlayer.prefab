@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 7048845432803493813}
   - component: {fileID: 7048845432803493810}
   - component: {fileID: 7048845432803493811}
-  - component: {fileID: 7048845432803493812}
+  - component: {fileID: 6128262626614557997}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: MainCamera
@@ -399,7 +399,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 887
+    m_Bits: 895
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -419,7 +419,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7048845432803493808}
   m_Enabled: 1
---- !u!114 &7048845432803493812
+--- !u!114 &6128262626614557997
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,9 +428,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7048845432803493808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0169a4da7da14c43870c43f2ba4efc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ac3782bdc7814f4b9eab1ec87a558ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controllerSensitivity: 2
   playerBody: {fileID: 7048845432273808742}
-  rightJoystick: {fileID: 0}
